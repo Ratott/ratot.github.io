@@ -9,40 +9,37 @@ body {
   animation-fill-mode: forwards;
   font-family: 'Montserrat', sans-serif;
 }
-.page{
+
+.page {
   transition: opacity 0.5s ease 0s;
   transition-delay: 0.5s;
-  opacity:100%;
+  opacity: 100%;
   mix-blend-mode: overlay;
-  position:relative;
-  display: grid;
-  grid-template-columns: 1fr;
+  position: relative;
 }
 
-.page > div{
-  padding: 50px;
- grid-row-start: 1;
- grid-column-start: 1;
- position:absolute;
+.page>div {
+  width: 100%;
+  position: absolute;
 }
 
-#page1{
+#page1 {
   z-index: 5;
 }
 
-#page2{
+#page2 {
   z-index: 6;
 }
 
-#page3{
+#page3 {
   z-index: 7;
 }
 
-#page4{
+#page4 {
   z-index: 8;
 }
 
-.hidden{
+.hidden {
   opacity: 0%;
   transition-delay: 0.5s;
   transition: opacity 0.5s;
@@ -56,12 +53,12 @@ h2 {
   font-family: 'Montserrat', sans-serif;
 }
 
-footer{
-  position:fixed;
+footer {
+  position: fixed;
   justify-content: center;
-  left:50%;
+  left: 50%;
   transform: translate(-50%, 0);
-  bottom:3%;
+  bottom: 3%;
   mix-blend-mode: overlay;
 }
 
@@ -101,7 +98,7 @@ a {
 
 #header i:hover {
   background: white;
-  color:black;
+  color: black;
   padding: 0.5rem;
   opacity: 50%;
 }
