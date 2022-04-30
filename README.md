@@ -1,2 +1,2 @@
 # ratott.github.io
-[Link](https://ratot.github.io/)
+[Link](https://ratott.github.io/)
