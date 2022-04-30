@@ -1,35 +1,108 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Ratot</title>
-    <meta name="description" content="ratot personal website">
-    <meta name="author" content="Ratot">
+  <title>Ratot</title>
+  <meta name="description" content="ratot personal website">
+  <meta name="author" content="Ratot">
 
-    <meta property="og:title" content="Ratot">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://ratot.github.io/">
-    <meta property="og:description" content="ratot personal website">
-    <meta property="og:image" content="images/logo.png">
-    <meta name="keywords" content="ratot, ratott">
+  <meta property="og:title" content="Ratot">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://ratot.github.io/">
+  <meta property="og:description" content="ratot personal website">
+  <meta property="og:image" content="images/logo.png">
+  <meta name="keywords" content="ratot, ratott">
 
-    <link rel="icon" href="/images/favicon.ico">
-    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/images/favicon.ico">
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
 
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="css/styles.css">
 
-  </head>
 
-  <body>
-    <div class="hero-container">
-      <div class="environment"></div>
-      <h2 class="hero glitch layers" data-text="近設計">
-        <span>近設計</span>
+</head>
+
+<body>
+  <canvas id="canvas"></canvas>
+  <header id="header">
+    <i onclick="toggle(this)" class="fa fa-bars"></i>
+    <ul id="list">
+      <il><a onclick="changePage(0)">Home</a></il>
+      <il><a onclick="changePage(1)">Test</a></il>
+      <il><a onclick="changePage(2)">Test</a></il>
+      <il><a onclick="changePage(3)">About</a></il>
+    </ul>
+  </header>
+  <div class="hero-container">
+    <div class="environment"></div>
+  </div>
+
+
+  <div id="page1" class="page">
+    <div class="hero-container page">
+      <h2 class="hero glitch layers" data-text="Ratot">
+        <span id='name'>Ratot</span>
+        <hr size=1 />
       </h2>
+      <p>
+        Student - Software Engineer - Editor
+      </p>
+    </div>
+    <ul id="links">
+      <li>
+        <a href="https://twitter.com/ratot_" class="icon fa-twitter fa-3x icon-3d">
+          <span class="label">Twitter</span></a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/ratot_" class="icon fa-youtube-play fa-3x icon-3d">
+          <span class="label">Youtube</span></a>
+      </li>
+      <li>
+        <a href="https://twitch.tv/ratot" class="icon fa-twitch fa-3x icon-3d">
+          <span class="label">Twitch</span></a>
+      </li>
+      <li>
+        <a href="https://steamcommunity.com/id/Ratot/" class="icon fa-steam fa-3x icon-3d">
+          <span class="label">Steam</span></a>
+      </li>
+    </ul>
+  </div>
 
-      <script src="js/scripts.js"></script>
-  </body>
+
+  <div id="page2" class="page hidden">
+  <h2>Test</h2>
+  </div>
+
+  <div id="page3" class="page hidden">
+
+  </div>
+
+  <div id="page4" class="page hidden">
+        <p>
+          Stuff I used to make this website:
+          <ul>
+          <li>
+            <a href="https://codepen.io/get-web/pen/wvovmYx">Raindrip by get-web</a>
+          </li>
+          <li>
+            <a href="https://picsum.photos/">Picsum by DMarby</a>
+          </li>
+          <li>
+            <a href="https://fontawesome.com/">Fontawesome</a>
+          </li>
+        </ul>
+        </p>
+  </div>
+
+  <footer>
+    Made by Ratot - 2022
+  </footer>
+
+    <script src="js/RainEffect.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
 </html>
