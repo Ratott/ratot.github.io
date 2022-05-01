@@ -1,6 +1,6 @@
 let display = false;
 let pages = [document.getElementById("page1"),document.getElementById("page2"),document.getElementById("page3"),document.getElementById("page4")];
-let titles = ["Home","Test","Test","About"];
+let titles = ["Home","Ideas","Test","About"];
 
 let toggle = button => {
   let element = document.getElementById("list");
