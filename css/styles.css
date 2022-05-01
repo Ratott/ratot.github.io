@@ -13,7 +13,7 @@ body {
 /* Pages */
 
 .page {
-  transition: opacity 0.5s ease 0s;
+  transition: opacity 0.5s ease 0s,display 0.5s;
   transition-delay: 0.5s;
   opacity: 100%;
   mix-blend-mode: overlay;
@@ -28,8 +28,13 @@ body {
 .hidden {
   opacity: 0%;
   transition-delay: 0.5s;
-  transition: opacity 0.5s;
+  transition: opacity 0.5s,display 0.5s;
   mix-blend-mode: overlay;
+}
+
+.hidden a{
+  display: inline-block;
+  pointer-events: none;
 }
 
 #page2{
