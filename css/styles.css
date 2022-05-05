@@ -98,6 +98,8 @@ a {
   padding: 0.5rem 0.5rem 0.5rem 0.7rem;
   transition: 0.2s;
   border-radius: 50%;
+  mix-blend-mode: overlay;
+
 }
 
 #header i:hover {
@@ -111,6 +113,8 @@ a {
   top: 3%;
   opacity: 100%;
   transition: top 1s ease 0s, opacity 1s ease 0s;
+  mix-blend-mode: overlay;
+
 }
 
 #header ul {
@@ -126,6 +130,8 @@ a {
   transition: top 1s ease 0s, opacity 1s ease 0s;
   opacity: 0%;
   z-index: 3;
+  mix-blend-mode: overlay;
+
 }
 
 #header a {
