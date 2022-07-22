@@ -1,4 +1,4 @@
-let display = false;
+let display = true;
 let pages = [document.getElementById("page1"),document.getElementById("page2"),document.getElementById("page3"),document.getElementById("page4")];
 let titles = ["Home","Ideas","Test","About"];
 
