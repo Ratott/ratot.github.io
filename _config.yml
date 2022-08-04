@@ -1,0 +1,22 @@
+title: ratot
+baseurl: /
+url: "ratott.github.io"
+google_analytics: # set tracking
+
+gems:
+  - jekyll-redirect-from
+
+defaults:
+-
+   scope:
+     path: ""
+     type: "pages"
+   values:
+     permalink: "/:basename/"
+
+exclude:
+ - Gemfile
+ - Gemfile.lock
+
+permalink: pretty
+markdown: kramdown

@@ -46,18 +46,22 @@
 </head>
 
 <body>
-  <canvas id="canvas"></canvas>
+  <canvas id="canvas" style="visibility:hidden;"></canvas>
   <header id="header">
     <i onclick="toggle(this)" class="fa fa-bars"></i>
-    <ul id="list" class="open">
-      <il><a onclick="changePage(0)">Home</a></il>
-      <il><a onclick="changePage(1)">Projects</a></il>
-      <il><a onclick="changePage(2)">Test</a></il>
-      <il><a onclick="changePage(3)">About</a></il>
+    <ul id="list">
+      <a onclick="changePage(0)">Home</a>
+      <a onclick="changePage(1)">Projects</a>
+      <a onclick="changePage(2)">Test</a>
+      <a onclick="changePage(3)">About</a>
     </ul>
   </header>
   <div class="hero-container">
-    <div class="environment"></div>
+    <div class="environment">
+      <video autoplay muted loop id="background">
+        <source src="videos/background.mp4" type="video/mp4">
+      </video>
+    </div>
   </div>
 
 
@@ -96,13 +100,13 @@
   <div id="page2" class="page hidden">
     <div>
       <h2>Projects:</h2>
-      <table>
-        <tr><td>
-        </td><td>
-        </td>
-      </tr>
-
-      </table>
+      <ul>
+        <li class="wrapper">
+          <iframe src="https://www.youtube-nocookie.com/embed/PDVlnQ7tx9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </li>
+        <li class="wrapper">
+        </li>
+      </ul>
     </div>
   </div>
 
@@ -116,6 +120,16 @@
 
   <div id="page4" class="page hidden">
     <div>
+      <p>
+        Settings:
+      </p>
+
+      <ul>
+        <li>
+          <input type="checkbox" id="toggleRain" name="toggleRain">
+          <label for="toggleRain">Enable rain</span>
+        </li>
+      </ul>
 
       <p>
         Stuff I used to make this website:
